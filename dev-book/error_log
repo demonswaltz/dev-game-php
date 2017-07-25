@@ -1,0 +1,3 @@
+[10-Jul-2017 19:27:08 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/demonswa/public_html/dev-book/query.php on line 29
+[10-Jul-2017 19:27:12 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/demonswa/public_html/dev-book/query.php on line 29
+[10-Jul-2017 19:27:14 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/demonswa/public_html/dev-book/query.php on line 29

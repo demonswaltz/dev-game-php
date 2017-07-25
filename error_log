@@ -1,0 +1,5 @@
+
+[17-Jul-2017 16:39:59 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/demonswa/public_html/authtest.php on line 27
+[17-Jul-2017 16:40:25 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/demonswa/public_html/authtest.php on line 27
+[17-Jul-2017 16:40:27 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/demonswa/public_html/authtest.php on line 27
+[17-Jul-2017 16:40:28 America/Denver] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home1/demonswa/public_html/authtest.php on line 27
