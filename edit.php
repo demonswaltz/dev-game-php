@@ -3,15 +3,7 @@
 
   if (isset($_SESSION['username']))
   {
-    $username = $_SESSION['username'];
-    $password = $_SESSION['password'];
-	require_once 'userdb_login.php';
-  $connection = new mysqli($hn, $un, $pw, $db);
-
-  if ($connection->connect_error) die($connection->connect_error);
-
-    destroy_session_and_data();
-  }
+    
   
    $query = "SELECT * FROM `dev-main` ORDER BY color, number";
     $results = $connect->query($query);
@@ -32,7 +24,7 @@
           echo '<p>'.$description.'</p></div>';
           echo '<div class="col-3"><button class="'.$color.'-button">'.$number.'</button></div></div>';
        }
-  
+  }
   
   else echo "Please <a href='authtest.php'>click here</a> to log in.";
 

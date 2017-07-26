@@ -29,7 +29,7 @@
 			$_SESSION['username'] = $un_temp;
 			$_SESSION['password'] = $pw_temp;
 			echo "You are now logged in";
-			die ("<p><a href='home.html'>Click here to continue</a></p>");
+			die ("<p><a href='home.php'>Click here to continue</a></p>");
 		}
 		else die("This failed");
 	}
