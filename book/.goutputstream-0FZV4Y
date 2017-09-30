@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+	
+<?php 
+	include '../login.php'; 
+	$connect=mysqli_connect($hn,$un,$pw,$db);
+ 
+if(mysqli_connect_errno($connect))
+{
+		echo 'Failed to connect';
+}
+?>
+<?php
+$sql = "SELECT * FROM `dev-main` WHERE color BETWEEN 'blue' AND 'orange' AND WHERE number BETWEEN 5 AND 28) ORDER BY color, number";
+$result = $connect->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["color"]. " " . $row["number"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+?>
+
+
+</body>
+</html>

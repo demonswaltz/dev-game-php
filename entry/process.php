@@ -1,5 +1,5 @@
 <?php 
-	include 'database.php'; 
+	include '../login.php'; 
 	$connect=mysqli_connect($hn,$un,$pw,$db);
  
 if(mysqli_connect_errno($connect))
@@ -9,8 +9,7 @@ if(mysqli_connect_errno($connect))
  
 ?>
  
-<?php
- 
+<?php 
 // create a variable
 $game_color=$_POST['game_color'];
 $game_num=$_POST['game_num'];
@@ -20,6 +19,8 @@ $user=$_POST['user'];
  
 //Execute the query
  
-mysqli_query($connect,"INSERT INTO `demonswa_dev-games`.`dev-main` (`id`, `color`, `number`, `game_name`, `description`, `user_id`) VALUES (NULL, '$game_color', '$game_num', '$game_name', '$description', '$user')");
-header('Location: http://www.demonswaltz.com/data-entry/');    
+mysqli_query($connect,"INSERT INTO `dev-main` (`id`, `color`, `number`, `game_name`, `description`, `user_id`) VALUES (NULL, '$game_color', '$game_num', '$game_name', '$description', '$user')");
+
+echo 'Item Added';
+//header('Location: /entry');    
 

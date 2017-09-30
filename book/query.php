@@ -1,12 +1,11 @@
 <?php 
-	include 'login.php'; 
+	include '../login.php'; 
 	$connect=mysqli_connect($hn,$un,$pw,$db);
  
 if(mysqli_connect_errno($connect))
 {
 		echo 'Failed to connect';
 }
- 
 ?>
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <?php

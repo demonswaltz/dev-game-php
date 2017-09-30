@@ -1,3 +1,9 @@
+<?php
+  session_start();
+
+  if (isset($_SESSION['username']))
+	{
+?>
 <html>
 <head>
 <style>
@@ -24,6 +30,11 @@ label{display:inline-block;width:100px;margin-bottom:10px;}
 
 <input type="submit" value="Add Game">
 </form>
+
+<?php 		
+       }
+  else echo "Please <a href='../home/index.php'>click here</a> to log in.";
+?>
  
  
  

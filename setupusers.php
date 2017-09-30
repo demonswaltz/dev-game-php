@@ -16,24 +16,24 @@ if(mysqli_connect_errno($connect))
    $results = $connect->query($query);
    if (!$results) die($connect->error);
    
-   $salt1  ="a#mb!";
-   $salt2  ="d@.a*";
+   $salt1  ="abcde"; //change this to any 5 characters
+   $salt2  ="abcde"; //change this to any 5 characters
    
-   $username = 'kz';
-   $password = 'child1';
+   $username = 'username1';
+   $password = 'password1';
    $token    = hash('ripemd128', "$salt1$password$salt2");
    
    add_user($connect, $username, $token);
    
-   $username = 'triston';
-   $password = 'summer1';
+   $username = 'username2';
+   $password = 'password2';
    $token    = hash('ripemd128', "$salt1$password$salt2");
    echo '$token';
    
    add_user($connect, $username, $token);
    
-   $username = 'emily';
-   $password = 'summer2';
+   $username = 'username3';
+   $password = 'password3';
    $token    = hash('ripemd128', "$salt1$password$salt2");
    
    add_user($connect, $username, $token);
